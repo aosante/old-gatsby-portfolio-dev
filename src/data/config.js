@@ -1,6 +1,7 @@
+// TODO remove empty values
 module.exports = {
   defaultTitle: 'Andrés',
-  logo: 'https://portfolio.smakosh.com/favicon/favicon-512.png',
+  logo: '',
   author: 'Andrés',
   url: 'https://portfolio.smakosh.com',
   legalName: 'John Doe',
@@ -14,8 +15,8 @@ module.exports = {
     google: '',
   },
   googleAnalyticsID: 'UA-88875900-4',
-  themeColor: '#da328a',
-  backgroundColor: '#da328a',
+  themeColor: '#ff0a78',
+  backgroundColor: '#ff0a78',
   social: {
     facebook: 'appId',
     twitter: '',

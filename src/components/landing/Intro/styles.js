@@ -31,7 +31,7 @@ export const Details = styled.div`
   h1 {
     margin-bottom: 2rem;
     font-size: 36pt;
-    color: #212121;
+    color: #ccd6f6;
 
     @media (max-width: 680px) {
       font-size: 30pt;
@@ -42,11 +42,15 @@ export const Details = styled.div`
     margin-bottom: 2.5rem;
     font-size: 32pt;
     font-weight: normal;
-    color: #707070;
+    color: #8892b0;
 
     @media (max-width: 680px) {
       font-size: 26pt;
     }
+  }
+
+  span {
+    color: #ccd6f6;
   }
 `;
 
