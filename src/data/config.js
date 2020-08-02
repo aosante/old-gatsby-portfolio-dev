@@ -1,6 +1,6 @@
 // TODO remove empty values
 module.exports = {
-  defaultTitle: 'Andrés',
+  defaultTitle: 'Andrés Osante',
   logo: '',
   author: 'Andrés',
   url: 'https://portfolio.smakosh.com',
