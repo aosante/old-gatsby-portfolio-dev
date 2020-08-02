@@ -1,13 +1,29 @@
-import React from 'react'
+import React, {useState} from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { Wrapper } from './styles'
+import tinkSound from 'assets/audio/tink.wav'
+import soundOn from 'assets/icons/sound-on.jpg'
+import soundOff from 'assets/icons/sound-off.jpg'
 
-const NavbarLinks = () => (
+const NavbarLinks = () => { 
+	const [mute, setMute] = useState(false);
+	const [audio] = useState(new Audio(tinkSound));
+
+	const playAudio = () => {
+		if(!mute) audio.play();
+	}
+
+	return (
 	<Wrapper >
-		<AnchorLink href="#about">About</AnchorLink>
-		<AnchorLink href="#projects">Projects</AnchorLink>
-		<AnchorLink href="#contact">Contact</AnchorLink>
+		<img onClick={() => setMute(!mute)}  src={mute ? soundOff : soundOn} alt="Sound off or on icon"/>
+		<div>
+			<AnchorLink onMouseEnter={playAudio} href="#about">About</AnchorLink>
+			<AnchorLink onMouseEnter={playAudio} href="#projects">Projects</AnchorLink>
+			<AnchorLink onMouseEnter={playAudio} href="#contact">Contact</AnchorLink>
+		</div>
 	</Wrapper>
 )
+
+}
 
 export default NavbarLinks
