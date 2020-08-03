@@ -41,7 +41,7 @@ export const Details = styled.div`
 
   h1 {
     margin-bottom: 2rem;
-    font-size: 60pt;
+    font-size: 55pt;
     letter-spacing: 1.75px;
     font-family: 'SF Mono', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
@@ -58,13 +58,13 @@ export const Details = styled.div`
 
   h4 {
     margin-bottom: 2.5rem;
-    font-size: 24pt;
+    font-size: 30pt;
     font-weight: normal;
     color: #8892b0;
     letter-spacing: 1.75px;
 
     @media (max-width: 680px) {
-      font-size: 31pt;
+      font-size: 28pt;
     }
   }
 

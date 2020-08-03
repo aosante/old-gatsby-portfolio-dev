@@ -3,8 +3,8 @@ import styled from 'styled-components';
 export const Button = styled.button`
   cursor: pointer;
   border-radius: 3px;
-  padding: 0.7rem 2.5rem;
-  border: none;
+  padding: 1rem 2.5rem;
+  border: 1.2px solid #ff0a78;
   -webkit-appearance: none;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -12,20 +12,19 @@ export const Button = styled.button`
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #fff;
-  background: #ff0a78;
-
+  color: #ff0a78;
+  font-family: 'SF Mono', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  transition: background-color 400ms ease-in-out;
   &:focus {
     outline: none;
   }
-
-  &:disabled {
-    background: gray;
+  &:hover {
+    background-color: rgba(255, 10, 120, 0.15);
   }
 
   ${({ secondary }) =>
     secondary &&
     `
-		background: #ff0a78;
+		background: none;
 	`}
 `;

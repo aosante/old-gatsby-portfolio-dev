@@ -18,9 +18,9 @@ const NavbarLinks = ({sidebar}) => {
 	<Wrapper sidebar={sidebar} >
 		<img onClick={() => setMute(!mute)}  src={mute ? soundOff : soundOn} alt="Sound off or on icon"/>
 		<div>
-			<AnchorLink onMouseEnter={playAudio} href="#about">About</AnchorLink>
-			<AnchorLink onMouseEnter={playAudio} href="#projects">Projects</AnchorLink>
-			<AnchorLink onMouseEnter={playAudio} href="#contact">Contact</AnchorLink>
+			<AnchorLink  onMouseEnter={() => playAudio()} href="#about">About</AnchorLink>
+			<AnchorLink onMouseEnter={() => playAudio()} href="#projects">Projects</AnchorLink>
+			<AnchorLink onMouseEnter={() => playAudio()} href="#contact">Contact</AnchorLink>
 		</div>
 	</Wrapper>
 )

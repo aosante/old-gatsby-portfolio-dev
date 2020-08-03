@@ -1,4 +1,12 @@
 import styled from 'styled-components';
+import detailsIllustration from 'assets/illustrations/details.svg';
+
+export const OuterContainer = styled.div`
+ background-image: url(${detailsIllustration});
+  background-size: contain;
+  background-position: left top;
+  background-repeat: no-repeat;
+`
 
 export const Wrapper = styled.div`
   padding: 2rem 0;
