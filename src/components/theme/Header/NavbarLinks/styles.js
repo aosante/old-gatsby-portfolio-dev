@@ -7,6 +7,12 @@ export const Wrapper = styled.div`
  	justify-content: space-between;
  	position: relative;
 	width: 100%;
+	${({sidebar}) => 
+        sidebar && `
+		flex-direction: column;
+		transform: translateY(100px);
+   `
+	}
  }
 img{
 	 width: 30px;
@@ -31,7 +37,11 @@ img{
 	padding: 3px 0px;
 	border-radius: 10px;
 	&:hover {
+		${({sidebar}) => 
+        !sidebar && `
 		color: #0a1928;
+   `
+	}
 		transform: scale(1.015);
 	}
 	&:before, &:after {
@@ -59,6 +69,13 @@ img{
 	}
 	@media (max-width: 960px) {
 		display: none;
+		/* transition: all 5s ease-in-out; */
+		${({sidebar}) => 
+        sidebar && `
+		display: block;
+		margin: 10px;
+   `
+	}
 	}
   }
 `;

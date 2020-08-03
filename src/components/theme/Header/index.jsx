@@ -9,7 +9,7 @@ export const Header = () => {
 	return (
 		<Wrapper>
 			<Overlay sidebar={sidebar} onClick={() => toggle(!sidebar)} />
-			<Navbar />
+			<Navbar sidebar={sidebar} />
 			<Hamburger sidebar={sidebar} toggle={toggle} />
 			<Sidebar sidebar={sidebar} toggle={toggle} />
 		</Wrapper>
