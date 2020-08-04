@@ -8,10 +8,10 @@ import soundOff from 'assets/icons/sound-off.jpg'
 const NavbarLinks = ({sidebar}) => { 
 	
 	const [mute, setMute] = useState(false);
-	const [audio] = useState(new Audio(tinkSound));
+	const [audio] = useState(typeof window !== 'undefined' ? new Audio(tinkSound) : null);
 
 	const playAudio = () => {
-		if(!mute) audio.play();
+		if(!mute) audio.play().catch(error => console.log(error));
 	}
 
 	return (

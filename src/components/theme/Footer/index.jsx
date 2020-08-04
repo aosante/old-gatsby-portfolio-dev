@@ -15,7 +15,7 @@ export const Footer = () => (
 					</span>{' '}
 					by{' '}
 					<a
-						href="https://smakosh.com/?ref=portfolio-dev"
+						href="https://andresosante.com/?ref=portfolio-dev"
 						rel="noopener noreferrer"
 						target="_blank"
 					>

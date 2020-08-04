@@ -14,7 +14,7 @@ export const Intro = () => (
 				<h1>Andrés.</h1>
 				<h4>A developer from <span>Costa Rica.</span></h4>
 				<div>
-				<Button as={AnchorLink} href="#contact">
+				<Button as={AnchorLink} href="#about">
 					Learn More
 				</Button>
 				</div>
