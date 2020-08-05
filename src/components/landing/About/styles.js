@@ -36,6 +36,9 @@ export const Details = styled.div`
       margin-bottom: 2.5rem;
     }
   }
+  a {
+    color: #ff0a78;
+  }
 `;
 
 export const Thumbnail = styled.div`

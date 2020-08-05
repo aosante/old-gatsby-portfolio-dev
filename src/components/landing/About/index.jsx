@@ -13,10 +13,10 @@ export const About = () => (
       <Details>
         <h1>About Me</h1>
         <p>
-        I'm a business graduate from Universidad de Costa Rica, and I discovered programming 4 years ago. I've been developing as a hobby and professionally ever since. Surfing, guitar and programming are the three things that constitute my free time.
+        I'm a business graduate from <a href="https://www.ucr.ac.cr/" target="_blank">Universidad de Costa Rica</a>, with a technical degree in Sofwtare Engineering from <a href="https://www.ucenfotec.ac.cr/" target="_blank">Universidad Cenfotec</a>.
         </p>
-        <p>The latter, is something I've become very passionate about. Losing sleep practicing, with lots of tabs always open, and a vast YouTube and Udemy watchlist with new topics to learn.</p>
-        <p>I look forward to excercising this passion by working with you!</p>
+        <p>I discovered software development 4 years ago, and I've been building apps as a hobby and professionally ever since.</p>
+        <p>Surfing, guitar and programming are the three things I enjoy the most, and I look forward to excercising my passion for the latter by working with you!</p>
         <Button as={AnchorLink} href="#contact">
           Let's Talk
         </Button>
