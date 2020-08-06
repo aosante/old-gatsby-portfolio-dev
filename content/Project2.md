@@ -1,7 +1,7 @@
 ---
-title: 'Project Two'
-description: "Project's description"
-technologies: 'JavaScript, CSS'
-sourcelink: 'www.source.com'
-sitelink: 'www.example.com'
+title: 'Expense Tracker'
+description: 'Personal monthly expense tracker built with the MERN stack, Context API and Material UI for styling.'
+technologies: 'React,Material UI,Node,MongoDB'
+sourcelink: 'https://github.com/aosante/monthly-expense-tracker'
+sitelink: 'https://monthly-expense-tracker.herokuapp.com/'
 ---

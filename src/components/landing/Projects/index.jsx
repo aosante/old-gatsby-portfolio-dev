@@ -1,70 +1,58 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import { Container, Card } from 'components/common'
 import starIcon from 'assets/icons/star.svg'
 import forkIcon from 'assets/icons/fork.svg'
 import { Wrapper, OuterContainer, Grid, Item, Content, Stats } from './styles'
 
+
 export const Projects = () => {
-  const {
-    github: {
-      viewer: {
-        repositories: { edges },
-      },
-    },
-  } = useStaticQuery(
+  const {allMarkdownRemark: {edges}} = useStaticQuery(
     graphql`
-      {
-        github {
-          viewer {
-            repositories(
-              first: 8
-              orderBy: { field: STARGAZERS, direction: DESC }
-            ) {
-              edges {
-                node {
-                  id
-                  name
-                  url
-                  description
-                  stargazers {
-                    totalCount
-                  }
-                  forkCount
-                }
-              }
-            }
-          }
+  {
+  allMarkdownRemark {
+    edges {
+      node {
+        frontmatter {
+          technologies
+          sourcelink
+          sitelink
+          description
+          title
         }
       }
+    }
+  }
+}
     `
   )
+  
   return (
     <OuterContainer>
     <Wrapper as={Container}  id="projects">
       <h1>Projects</h1>
       <Grid>
-        {edges.map(({ node }) => (
+        {edges.map(({ node: {frontmatter} }, i) => (
           <Item
-            key={node.id}
+            key={i}
             as="a"
-            href={node.url}
+            href={frontmatter.sitelink}
             target="_blank"
             rel="noopener noreferrer"
           >
             <Card>
               <Content>
-                <h4>{node.name}</h4>
-                <p>{node.description}</p>
+                <h4>{frontmatter.title}</h4>
+                <p>{frontmatter.description}</p>
               </Content>
               <Stats>
                 <div>
                   <img src={starIcon} alt="stars" />
-                  <span>{node.stargazers.totalCount}</span>
+                  <span>0</span>
                 </div>
                 <div>
                   <img src={forkIcon} alt="forks" />
-                  <span>{node.forkCount}</span>
+                  <span>0</span>
                 </div>
               </Stats>
             </Card>
