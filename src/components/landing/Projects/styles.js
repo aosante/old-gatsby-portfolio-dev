@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import detailsIllustration from 'assets/illustrations/details.svg';
 
 export const OuterContainer = styled.div`
- background-image: url(${detailsIllustration});
+  background-image: url(${detailsIllustration});
   background-size: contain;
   background-position: left top;
   background-repeat: no-repeat;
@@ -17,7 +17,7 @@ export const Grid = styled.div`
   align-items: center;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 8fr;
-  gap: 1.2rem 1.2rem;
+  gap: 1.2rem;
 
   @media (max-width: 960px) {
     grid-template-columns: repeat(2, 1fr);
@@ -26,12 +26,15 @@ export const Grid = styled.div`
   @media (max-width: 680px) {
     grid-template-columns: 1fr;
   }
+
+  a {
+    margin-bottom: 2rem;
+  }
 `;
 
 export const Item = styled.div`
   width: 100%;
-  height: 100%;
-  overflow: hidden;
+  height: 300px;
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.11);
 
   h4 {
@@ -43,8 +46,49 @@ export const Item = styled.div`
   }
 `;
 
+export const Header = styled.div`
+ display: flex;
+ 
+ div.icon {
+   display: flex;
+   align-items: center;
+   flex: 3;
+   img {
+     width: 35px;
+     margin: 0;
+   }
+ }
+
+ div.links {
+   flex: 1;
+   display: flex;
+   align-items: center;
+   a {
+     flex: 1;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+     margin: 0;
+     img {
+      width: 25px;
+      height: 25px;
+      margin: 0;
+      &:hover {
+        transform: scale(1.1);
+      }
+     }
+   }
+ }
+`
+
 export const Content = styled.div`
   padding: 1rem 0;
+  h4 {
+    color: #ccd6f6;
+  } p {
+    color: #8892b0;
+  }
 `;
 
 export const Stats = styled.div`
@@ -62,7 +106,7 @@ export const Stats = styled.div`
     }
 
     span {
-      color: #000;
+      color: #8892b0;
       margin-left: 0.5rem;
     }
   }

@@ -1,9 +1,11 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import { Container, Card } from 'components/common'
 import starIcon from 'assets/icons/star.svg'
-import forkIcon from 'assets/icons/fork.svg'
-import { Wrapper, OuterContainer, Grid, Item, Content, Stats } from './styles'
+import folderIcon from '../../../../static/icons/folder.svg';
+import githubIcon from '../../../../static/icons/github.svg';
+import eyeIcon from '../../../../static/icons/eye.svg'
+import { Wrapper, OuterContainer, Grid, Item, Content, Header, Stats } from './styles'
 
 
 export const Projects = () => {
@@ -25,7 +27,8 @@ export const Projects = () => {
   }
 }
     `
-  )
+  );
+
   
   return (
     <OuterContainer>
@@ -41,6 +44,17 @@ export const Projects = () => {
             rel="noopener noreferrer"
           >
             <Card>
+            <Header>
+                  <div className="icon">
+                    <img src={folderIcon} alt="Folder Icon"/>
+                  </div>
+                  <div className="links">
+                    <a href="#"><img src={githubIcon} alt="Github Icon"/></a>
+                    <a href="#">
+                      <img src={eyeIcon} alt="Eye Icon"/>
+                      </a>
+                  </div>
+                </Header>
               <Content>
                 <h4>{frontmatter.title}</h4>
                 <p>{frontmatter.description}</p>
@@ -51,8 +65,6 @@ export const Projects = () => {
                   <span>0</span>
                 </div>
                 <div>
-                  <img src={forkIcon} alt="forks" />
-                  <span>0</span>
                 </div>
               </Stats>
             </Card>
