@@ -27,7 +27,7 @@ export const Grid = styled.div`
     grid-template-columns: 1fr;
   }
 
-  a {
+   .item {
     margin-bottom: 2rem;
   }
 `;
@@ -68,12 +68,13 @@ export const Header = styled.div`
      display: flex;
      align-items: center;
      justify-content: center;
-     cursor: pointer;
+     pointer-events: auto;
      margin: 0;
      img {
       width: 25px;
       height: 25px;
       margin: 0;
+      z-index: 999;
       &:hover {
         transform: scale(1.1);
       }

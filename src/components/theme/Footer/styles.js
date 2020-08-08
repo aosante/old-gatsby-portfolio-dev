@@ -1,50 +1,61 @@
-import footerIllustration from 'assets/illustrations/footer.svg';
-import styled from 'styled-components';
+import styled, {keyframes} from 'styled-components';
 
-export const Wrapper = styled.div`
-  padding: 28rem 0 4rem 0;
-  background-image: url(${footerIllustration});
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-
-  @media (max-width: 1960px) {
-    padding: 14rem 0 4rem;
+const wave = keyframes`
+  to {
+    transform: translateX(-100%);
   }
-`;
+`
 
-export const Flex = styled.div`
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-
-  @media (max-width: 680px) {
-    flex-direction: column;
-    text-align: center;
+export const Wrapper = styled.footer`
+  width: 100%;
+  position: relative;
+  bottom: 0px;
+  .fill {
+    background-color: #f7b5d7;
+    position: absolute;
+    width: 100%;
+    border: 2px solid red;
+    padding: 2em 0;
+    transform: translateY(-60px);
+    display: flex;
     align-items: center;
+  }
+  svg {
+    width: 100%;
+  }
+  .wave {
+    animation: ${wave} 3s linear;
+    animation-iteration-count: infinite;
+    fill: #f7b5d7;
+  }
+  #wave2 {
+    animation-duration: 5s;
+    animation-direction: reverse;
+    opacity: 0.6;
+  }
+  #wave3 {
+    animation-duration: 7s;
+    opacity: 0.3;
   }
 `;
 
 export const Links = styled.div`
+  border: 2px solid black;
+  width: 8%;
   display: flex;
-  align-items: center;
-
-  a {
-    margin: 0 0.5rem;
-
-    img {
-      margin: 0;
-    }
-
-    &:first-child,
-    &:last-child {
-      margin: 0;
-    }
+  justify-content: space-between;
+  margin-left: 10px;
+  img {
+    margin: 0;
+    width: 40px;
+    color: red;
   }
-`;
-
-export const Details = styled.div`
+  @media (max-width: 960px) {
+    width: 16%;
+  }
   @media (max-width: 680px) {
-    margin-bottom: 2rem;
+    width: 25%;
   }
-`;
+`
+
+

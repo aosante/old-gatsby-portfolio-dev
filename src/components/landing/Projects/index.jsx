@@ -36,11 +36,7 @@ export const Projects = () => {
       <Grid>
         {edges.map(({ node: {frontmatter} }, i) => (
           <Item
-            key={i}
-            as="a"
-            href={frontmatter.sitelink}
-            target="_blank"
-            rel="noopener noreferrer"
+            key={i} className="item"
           >
             <Card>
             <Header>
@@ -48,8 +44,8 @@ export const Projects = () => {
                     <img src={folderIcon} alt="Folder Icon"/>
                   </div>
                   <div className="links">
-                    <a href="#"><img src={githubIcon} alt="Github Icon"/></a>
-                    <a href="#">
+                    <a href={frontmatter.sourcelink}><img src={githubIcon} alt="Github Icon"/></a>
+                    <a href={frontmatter.sitelink} target="_blank" >
                       <img src={eyeIcon} alt="Eye Icon"/>
                       </a>
                   </div>
