@@ -86,28 +86,22 @@ export const Content = styled.div`
   padding: 1rem 0;
   h4 {
     color: #ccd6f6;
+    font-size: 18pt;
   } p {
     color: #8892b0;
+    font-size: 13.5pt;
+    line-height: 1.3;
   }
 `;
 
-export const Stats = styled.div`
+export const Stack = styled.ul`
   display: flex;
-  align-items: center;
-
-  div {
-    display: flex;
-    &:first-child {
-      margin-right: 0.5rem;
-    }
-
-    img {
-      margin: 0;
-    }
-
-    span {
-      color: #8892b0;
-      margin-left: 0.5rem;
-    }
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  li {
+    color: #8892b0;
+    font-family: 'SF Mono', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 10pt;
   }
 `;

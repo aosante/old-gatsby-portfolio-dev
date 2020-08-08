@@ -1,11 +1,10 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import { Container, Card } from 'components/common'
-import starIcon from 'assets/icons/star.svg'
 import folderIcon from '../../../../static/icons/folder.svg';
 import githubIcon from '../../../../static/icons/github.svg';
 import eyeIcon from '../../../../static/icons/eye.svg'
-import { Wrapper, OuterContainer, Grid, Item, Content, Header, Stats } from './styles'
+import { Wrapper, OuterContainer, Grid, Item, Content, Header, Stack } from './styles'
 
 
 export const Projects = () => {
@@ -59,14 +58,11 @@ export const Projects = () => {
                 <h4>{frontmatter.title}</h4>
                 <p>{frontmatter.description}</p>
               </Content>
-              <Stats>
-                <div>
-                  <img src={starIcon} alt="stars" />
-                  <span>0</span>
-                </div>
-                <div>
-                </div>
-              </Stats>
+                  <Stack>
+                    {frontmatter.technologies.split(',').map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </Stack>
             </Card>
           </Item>
         ))}
