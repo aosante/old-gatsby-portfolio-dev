@@ -19,6 +19,9 @@ export const Wrapper = styled.footer`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media(max-width: 680px) {
+      flex-direction: column;
+    }
   }
   svg {
     width: 100%;
@@ -48,12 +51,17 @@ export const Links = styled.div`
     margin: 0;
     width: 40px;
     color: red;
+    transition: 0.4s;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
   @media (max-width: 960px) {
     width: 16%;
   }
   @media (max-width: 680px) {
     width: 25%;
+    margin: 2rem 0;
   }
 `
 export const Info = styled.div`
@@ -66,7 +74,7 @@ export const Info = styled.div`
     font-weight: 900;
     margin-bottom: 0;
     font-family: 'SF Mono', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 18pt;
+    font-size: 16pt;
     img {
       width: 40px;
       margin-left: 5px;
@@ -79,6 +87,16 @@ export const Info = styled.div`
     display: flex;
     padding-left: 2rem;
     align-items: center;
+  }
+  @media(max-width: 680px) {
+    flex-direction: column;
+    margin: 0;
+    p, p.phone {
+      padding: .7rem;
+      text-align: center;
+      width: 100%;
+      font-size: 13pt;
+    }
   }
 `
 
