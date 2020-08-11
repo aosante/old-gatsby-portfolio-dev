@@ -1,5 +1,5 @@
 import React from 'react'
-import { Wrapper, Links } from './styles'
+import { Wrapper, Links, Info } from './styles'
 import social from './social.json'
 
 export const Footer = () => (
@@ -42,6 +42,10 @@ export const Footer = () => (
           </a>
         ))}
 		  </Links>
+		  <Info>
+			  <p>Andrés Osante <span>&copy;2020</span></p>
+			  <p className="phone">+(506)8814-5840 <img src='/icons/phone.svg'/> </p>
+		  </Info>
 	  </div>
 	</Wrapper>
 )

@@ -14,11 +14,11 @@ export const Wrapper = styled.footer`
     background-color: #f7b5d7;
     position: absolute;
     width: 100%;
-    border: 2px solid red;
     padding: 2em 0;
     transform: translateY(-60px);
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
   svg {
     width: 100%;
@@ -40,11 +40,10 @@ export const Wrapper = styled.footer`
 `;
 
 export const Links = styled.div`
-  border: 2px solid black;
   width: 8%;
   display: flex;
   justify-content: space-between;
-  margin-left: 10px;
+  margin-left: 15px;
   img {
     margin: 0;
     width: 40px;
@@ -55,6 +54,31 @@ export const Links = styled.div`
   }
   @media (max-width: 680px) {
     width: 25%;
+  }
+`
+export const Info = styled.div`
+  max-width: 60%;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  p {
+    color: #0a1928;
+    font-weight: 900;
+    margin-bottom: 0;
+    font-family: 'SF Mono', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18pt;
+    img {
+      width: 40px;
+      margin-left: 5px;
+    }
+    span {
+      color: #ff0a78;
+    }
+  }
+  p.phone {
+    display: flex;
+    padding-left: 2rem;
+    align-items: center;
   }
 `
 
