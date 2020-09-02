@@ -1,3 +1,4 @@
+// TODO move to gatsby-config and use graphql to query inside component
 export default [
     {
       css: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)',
