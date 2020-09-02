@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { Layout, SEO } from 'components/common';
 
 export default () => (

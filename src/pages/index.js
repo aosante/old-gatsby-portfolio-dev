@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { Intro, About, Contact, Projects, Skills } from 'components/landing';
 import { Layout, SEO } from 'components/common'
 
