@@ -1,5 +1,6 @@
 import React from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+
 import { Container, Button } from 'components/common'
 import surfer from 'assets/illustrations/surfer.svg'
 import {  AboutWrapper, Details, Thumbnail } from './styles'

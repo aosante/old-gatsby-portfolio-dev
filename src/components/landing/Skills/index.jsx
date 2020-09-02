@@ -1,8 +1,31 @@
 
 import React from 'react'
+import {useStaticQuery, graphql} from 'gatsby';
+
 import {Wrapper, Content, SkillGrid} from './styles';
 
+
 export const Skills = () => {
+    const {allSite: {edges}} = useStaticQuery(graphql`
+     {
+  allSite {
+    edges {
+      node {
+        siteMetadata {
+          skillData {
+            height
+            css
+          }
+        }
+      }
+    }
+  }
+     }
+    `);
+
+    const {node: {siteMetadata: {skillData}}} = edges[0];
+    console.log(skillData);
+
     return (
         <Wrapper>
             <Content>

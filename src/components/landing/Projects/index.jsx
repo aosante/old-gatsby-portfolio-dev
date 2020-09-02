@@ -1,5 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
+
 import { Container, Card } from 'components/common'
 import folderIcon from '../../../../static/icons/folder.svg';
 import githubIcon from '../../../../static/icons/github.svg';
