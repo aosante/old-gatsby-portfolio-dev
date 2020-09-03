@@ -38,13 +38,15 @@ module.exports = {
     {
     css: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)',
     height: 320,
-    name: 'htmlIcon'
+    name: 'htmlIcon',
+    isDark: true
   },
   {
     
     css: 'linear-gradient(135deg, #c3cfe2 0%, #c3cfe2 100%)',
     height: 320,
-    name: 'cssIcon'
+    name: 'cssIcon',
+    isDark: true
   },
   {
     
@@ -73,12 +75,14 @@ module.exports = {
       
       css: 'linear-gradient(135deg, #e3c3fc 0%, #8ec5fc 100%)',
       height: 320,
-      name: 'sqlserverIcon'
+      name: 'sqlserverIcon',
+      isDark: true
     },
     {
       
       css: 'linear-gradient(135deg, #f091fb 0%, #f5576c 100%)',
       height: 270,
-      name: 'mongodbIcon'
+      name: 'mongodbIcon',
+      isDark: true
     }, ]
 };

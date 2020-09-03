@@ -71,4 +71,7 @@ export const SkillGrid = styled.div`
     @media (max-width: 680px) {
         min-height: 650px;
     }
+    .dark {
+        filter: drop-shadow( 1px 1px 0.5px rgba(255, 255, 255, .7));
+    }
 `
