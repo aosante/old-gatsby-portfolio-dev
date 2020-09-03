@@ -8,7 +8,6 @@ export const Wrapper  = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid purple;
     @media (max-width: 960px) {
         flex-direction: column;
         padding: 0;
@@ -16,7 +15,6 @@ export const Wrapper  = styled.div`
 `
 
 export const Content = styled.div`
-    border: 2px solid red;
     flex: 1;
     padding: 2rem 3rem;
     h1 {
@@ -39,16 +37,15 @@ export const Content = styled.div`
 `
 
 export const SkillGrid = styled.div`
-    border: 2px solid yellow;
     flex: 1.5;
-    width: 100%;
+    width: 96%;
     & > div {
-        border: 2px solid green;
         position: absolute;
         will-change: transform, width, height, opacity;
         display: flex;
         justify-content: center;
         align-items: center;
+        min-height: 160px;
     }
     & > div > div {
         position: relative;
@@ -68,10 +65,10 @@ export const SkillGrid = styled.div`
         height: 100px;
     }
     @media (max-width: 960px) {
-        min-height: 300px;
+        min-height: 330px;
         margin-top: 4rem;
     }
     @media (max-width: 680px) {
-        min-height: 600px;
+        min-height: 650px;
     }
 `

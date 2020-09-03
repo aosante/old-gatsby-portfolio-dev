@@ -8,6 +8,7 @@ import { ResizeObserver } from '@juggle/resize-observer'
 
 import {Wrapper, Content, SkillGrid} from './styles'
 import useMedia from './hooks/useMedia'
+import skillImages from './img';
 
 
 export const Skills = () => {
@@ -18,8 +19,9 @@ export const Skills = () => {
       node {
         siteMetadata {
           skillData {
-            height
             css
+            height
+            name
           }
         }
       }
@@ -64,8 +66,7 @@ export const Skills = () => {
             <SkillGrid ref={ref} className="list" style={{ height: Math.max(...heights) }}>
                 {transitions.map(({ item, props: { xy, ...rest }, key }) => (
                   <a.div key={key} style={{ transform: xy.interpolate((x, y) => `translate3d(${x}px,${y}px,0)`), ...rest }}>
-                    <div className="item" style={{ backgroundImage: item.css }}/>
-                      {/* <img width="100" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-image-512.png" alt=""/> */}
+                      <img style={{maxWidth: 90}} src={skillImages[item.name]} alt={item.name}/>
                   </a.div>
                 ))}
             </SkillGrid>

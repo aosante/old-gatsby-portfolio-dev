@@ -37,40 +37,48 @@ module.exports = {
     // TODO: replace css properties with the src for each skill image
     {
     css: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)',
-    height: 300
+    height: 320,
+    name: 'htmlIcon'
   },
   {
     
     css: 'linear-gradient(135deg, #c3cfe2 0%, #c3cfe2 100%)',
-    height: 300
+    height: 320,
+    name: 'cssIcon'
   },
   {
     
     css: 'linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%)',
-    height: 300
+    height: 320,
+    name: 'jsIcon'
   },
   {
     
     css: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
-    height: 300
+    height: 320,
+    name: 'graphqlIcon'
   },
   {
       css: 'linear-gradient(135deg, #a82dea 0%, #fed6e3 100%)',
-      height: 300
+      height: 320,
+      name: 'reactIcon'
     },
     {
       
       css: 'linear-gradient(135deg, #c3cfe2 0%, #c1cfe2 100%)',
-      height: 300
+      height: 320,
+      name: 'sassIcon'
     },
     {
       
       css: 'linear-gradient(135deg, #e3c3fc 0%, #8ec5fc 100%)',
-      height: 300
+      height: 320,
+      name: 'sqlserverIcon'
     },
     {
       
       css: 'linear-gradient(135deg, #f091fb 0%, #f5576c 100%)',
-      height: 300
+      height: 270,
+      name: 'mongodbIcon'
     }, ]
 };
