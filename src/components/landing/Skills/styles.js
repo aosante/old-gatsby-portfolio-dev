@@ -41,4 +41,37 @@ export const Content = styled.div`
 export const SkillGrid = styled.div`
     border: 2px solid yellow;
     flex: 1.5;
+    width: 100%;
+    & > div {
+        border: 2px solid green;
+        position: absolute;
+        will-change: transform, width, height, opacity;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    & > div > div {
+        position: relative;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        text-transform: uppercase;
+        font-size: 10px;
+        line-height: 10px;
+        border-radius: 4px;
+        box-shadow: 0px 10px 50px -10px rgba(0, 0, 0, 0.2);
+    }
+    .item {
+        width: 100px;
+        height: 100px;
+    }
+    @media (max-width: 960px) {
+        min-height: 300px;
+        margin-top: 4rem;
+    }
+    @media (max-width: 680px) {
+        min-height: 600px;
+    }
 `
