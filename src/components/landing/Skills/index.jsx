@@ -5,7 +5,6 @@ import { useTransition, a } from 'react-spring'
 import shuffle from 'lodash/shuffle'
 
 import {Wrapper, Content, SkillGrid} from './styles'
-import useMeasure from './hooks/useMeasure'
 import useMedia from './hooks/useMedia'
 
 
@@ -60,7 +59,7 @@ export const Skills = () => {
                 <h1>Skills</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quod consectetur saepe velit dolorem? Voluptas placeat voluptatem cum sint! Cupiditate rerum impedit maxime a officiis fuga enim deleniti natus! Aliquid eaque eum accusantium assumenda voluptate! Error rerum officiis unde eos repellendus animi inventore quia!</p>
             </Content>
-            <SkillGrid {...bind} className="list" style={{ height: Math.max(...heights) }}>
+            <SkillGrid className="list" style={{ height: Math.max(...heights) }}>
               
                 {transitions.map(({ item, props: { xy, ...rest }, key }) => (
                   <a.div key={key} style={{ transform: xy.interpolate((x, y) => `translate3d(${x}px,${y}px,0)`), ...rest }}>
