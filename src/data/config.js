@@ -37,52 +37,73 @@ module.exports = {
     // TODO: replace css properties with the src for each skill image
     {
     css: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)',
-    height: 320,
+    height: 250,
     name: 'htmlIcon',
     isDark: true
   },
   {
     
     css: 'linear-gradient(135deg, #c3cfe2 0%, #c3cfe2 100%)',
-    height: 320,
+    height: 250,
     name: 'cssIcon',
     isDark: true
   },
   {
     
     css: 'linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%)',
-    height: 320,
+    height: 250,
     name: 'jsIcon'
   },
   {
     
     css: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
-    height: 320,
+    height: 250,
     name: 'graphqlIcon'
   },
   {
       css: 'linear-gradient(135deg, #a82dea 0%, #fed6e3 100%)',
-      height: 320,
+      height: 250,
       name: 'reactIcon'
     },
     {
       
       css: 'linear-gradient(135deg, #c3cfe2 0%, #c1cfe2 100%)',
-      height: 320,
+      height: 250,
       name: 'sassIcon'
     },
     {
       
       css: 'linear-gradient(135deg, #e3c3fc 0%, #8ec5fc 100%)',
-      height: 320,
+      height: 250,
       name: 'sqlserverIcon',
       isDark: true
     },
     {
-      
       css: 'linear-gradient(135deg, #f091fb 0%, #f5576c 100%)',
-      height: 270,
+      height: 250,
       name: 'mongodbIcon',
       isDark: true
-    }, ]
+    }, 
+    {
+      css: 'linear-gradient(135deg, #f091fb 0%, #f5572c 100%)',
+      height: 250,
+      name: 'nodeIcon',
+      isDark: true,
+    },
+    {
+      css: 'linear-gradient(135deg, #f291fb 0%, #f1572c 100%)',
+      height: 250,
+      name: 'vueIcon',
+    },
+    {
+      css: 'linear-gradient(135deg, #f591fb 0%, #f1572c 100%)',
+      height: 250,
+      name: 'materialuiIcon',
+    },
+    {
+      css: 'linear-gradient(135deg, #f291fb 0%, #f1592c 100%)',
+      height: 250,
+      name: 'reduxIcon',
+    },
+  ]
 };

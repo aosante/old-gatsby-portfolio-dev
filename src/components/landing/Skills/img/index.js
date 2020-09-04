@@ -6,6 +6,10 @@ import reactIcon from './react.svg';
 import sassIcon from './sass.svg';
 import sqlserverIcon from './sql-server.svg';
 import mongodbIcon from './mongodb.svg';
+import nodeIcon from './node.svg';
+import vueIcon from './vue.svg';
+import materialuiIcon from './materialui.svg'
+import reduxIcon from './redux.svg'
 
 export default {
     htmlIcon,
@@ -15,5 +19,9 @@ export default {
     reactIcon,
     sassIcon,
     sqlserverIcon,
-    mongodbIcon
+    mongodbIcon,
+    nodeIcon,
+    vueIcon,
+    materialuiIcon,
+    reduxIcon,
 }

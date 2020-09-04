@@ -40,7 +40,7 @@ export const Skills = () => {
     const {node: {siteMetadata: {skillData}}} = edges[0];
     
       // Hook1: Tie media queries to the number of columns
-    const columns = useMedia(['(min-width: 1500px)', '(min-width: 1000px)', '(min-width: 600px)'], [5, 4, 4], 2);
+    const columns = useMedia(['(min-width: 1500px)', '(min-width: 1000px)', '(min-width: 600px)'], [4, 4, 4], 2);
     // Hook2: Measure the width of the container element
     const [ref, { width }] = useMeasure({polyfill: ResizeObserver});
     // Hook3: Hold items
@@ -80,7 +80,7 @@ export const Skills = () => {
             <SkillGrid ref={ref} className="list" style={{ height: Math.max(...heights) }}>
                 {transitions.map(({ item, props: { xy, ...rest }, key }) => (
                   <a.div key={key} style={{ transform: xy.interpolate((x, y) => `translate3d(${x}px,${y}px,0)`), ...rest }}>
-                      <img className={item.isDark && 'dark'} style={{maxWidth: 90}} src={skillImages[item.name]} alt={item.name}/>
+                      <img className={item.isDark && 'dark'} style={{maxWidth: 73}} src={skillImages[item.name]} alt={item.name}/>
                   </a.div>
                 ))}
             </SkillGrid>
