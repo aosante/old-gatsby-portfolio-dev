@@ -11,6 +11,7 @@ export const About = () =>  {
   const [showP, setShowP] = useState(false);
   const aboutProps = useSpring({opacity: showP ? 1 : 0, transform: showP ? 'translateX(0)' : 'translateX(200px)', from: {opacity: 0}, config: {duration: 700},delay: 700});
 
+  // Fades in about text when in view
   const onViewChange = inview => {
     if(!showP && inview) setShowP(true);
   }

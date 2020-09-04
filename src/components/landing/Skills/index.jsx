@@ -5,6 +5,8 @@ import { useTransition, a } from 'react-spring'
 import shuffle from 'lodash/shuffle'
 import useMeasure from 'react-use-measure'
 import { ResizeObserver } from '@juggle/resize-observer'
+import {InView} from 'react-intersection-observer'
+import {useSpring, animated} from 'react-spring'
 
 import {Wrapper, Content, SkillGrid} from './styles'
 import useMedia from './hooks/useMedia'
@@ -30,6 +32,10 @@ export const Skills = () => {
   }
      }
     `);
+
+    // Text animation
+    const [showP, setShowP] = useState(false);
+    const textProps = useSpring({opacity: showP ? 1 : 0, transform: showP ? 'translateX(0)' : 'translateX(-200px)', from: {opacity: 0}, config: {duration: 700},delay: 700}); 
 
     const {node: {siteMetadata: {skillData}}} = edges[0];
     
@@ -58,11 +64,18 @@ export const Skills = () => {
       trail: 25
     });
 
+    // Fades in skills description when in view
+    const onViewChange = inview => {
+      if(!showP && inview) setShowP(true);
+    }
+
     return (
         <Wrapper>
             <Content>
                 <h1>Skills</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quod consectetur saepe velit dolorem? Voluptas placeat voluptatem cum sint! Cupiditate rerum impedit maxime a officiis fuga enim deleniti natus! Aliquid eaque eum accusantium assumenda voluptate! Error rerum officiis unde eos repellendus animi inventore quia!</p>
+                <InView tag="div" onChange={onViewChange}>
+                  <animated.p style={textProps}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quod consectetur saepe velit dolorem? Voluptas placeat voluptatem cum sint! Cupiditate rerum impedit maxime a officiis fuga enim deleniti natus! Aliquid eaque eum accusantium assumenda voluptate! Error rerum officiis unde eos repellendus animi inventore quia!</animated.p>
+                </InView>
             </Content>
             <SkillGrid ref={ref} className="list" style={{ height: Math.max(...heights) }}>
                 {transitions.map(({ item, props: { xy, ...rest }, key }) => (
