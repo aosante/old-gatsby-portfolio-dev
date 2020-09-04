@@ -10,7 +10,7 @@ import {useSpring, animated} from 'react-spring'
 
 import {Wrapper, Content, SkillGrid} from './styles'
 import useMedia from './hooks/useMedia'
-import skillImages from './img';
+import skillImages from './images';
 
 
 export const Skills = () => {
