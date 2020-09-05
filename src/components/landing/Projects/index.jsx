@@ -45,7 +45,7 @@ export const Projects = () => {
                     <img src={folderIcon} alt="Folder Icon"/>
                   </div>
                   <div className="links">
-                    <a href={frontmatter.sourcelink}><img src={githubIcon} alt="Github Icon"/></a>
+                    <a href={frontmatter.sourcelink} target="_blank"><img src={githubIcon} alt="Github Icon"/></a>
                     <a href={frontmatter.sitelink} target="_blank" >
                       <img src={eyeIcon} alt="Eye Icon"/>
                       </a>
