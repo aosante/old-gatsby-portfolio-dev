@@ -72,9 +72,13 @@ export const Skills = () => {
     return (
         <Wrapper>
             <Content>
-                <h1>Skills</h1>
+                <h1>Skills & Experience</h1>
                 <InView tag="div" onChange={onViewChange}>
-                  <animated.p style={textProps}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quod consectetur saepe velit dolorem? Voluptas placeat voluptatem cum sint! Cupiditate rerum impedit maxime a officiis fuga enim deleniti natus! Aliquid eaque eum accusantium assumenda voluptate! Error rerum officiis unde eos repellendus animi inventore quia!</animated.p>
+                  <animated.div style={textProps}>
+                    <p>Mainly, I am a web application developer, using JavaScript as my main language.</p>
+                    <p>On the front end side of things, I have experience utilizing modern frameworks such as Vue and React, with a variety of architectures, styling and state management tools, and data fetching techniques.</p>
+                    <p>As to server side code, my main experience lies in writing Node JS (in both JavaScript and TypeScript). I also have hands-on experience with testing (Jest, Enzyme, Mocha), and databases (SQL and Mongo).</p>
+                  </animated.div>
                 </InView>
             </Content>
             <SkillGrid ref={ref} className="list" style={{ height: Math.max(...heights) }}>

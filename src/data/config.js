@@ -34,7 +34,6 @@ module.exports = {
   foundingDate: '2020',
   recaptcha_key: '6LfuIbkZAAAAAOjlJsaTeDsW2EFB3UfyOJcFbTpm',
   skillData: [ 
-    // TODO: replace css properties with the src for each skill image
     {
     css: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)',
     height: 250,

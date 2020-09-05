@@ -22,13 +22,16 @@ export const Details = styled.div`
 
   h1 {
     margin-bottom: 2rem;
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     color: #ccd6f6;
+    @media (max-width: 680px) {
+      text-align: center;
+    }
   }
 
   p {
     margin-bottom: 1.5rem;
-    font-size: 15pt;
+    font-size: 14.3pt;
     font-weight: normal;
     line-height: 1.3;
     color: #8892b0;

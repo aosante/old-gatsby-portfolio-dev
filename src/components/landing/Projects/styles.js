@@ -10,6 +10,14 @@ export const OuterContainer = styled.div`
 
 export const Wrapper = styled.div`
   padding: 2rem 0;
+  h1 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #ccd6f6;
+    @media (max-width: 680px) {
+      text-align: center;
+    }
+  }
 `;
 
 export const Grid = styled.div`
