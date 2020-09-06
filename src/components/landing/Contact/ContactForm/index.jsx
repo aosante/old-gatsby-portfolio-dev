@@ -1,5 +1,6 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import Swal from 'sweetalert2';
 
 import { Button, Input, TextArea } from 'components/common';
 import { Error, Center, InputField } from './styles';
@@ -19,7 +20,7 @@ const ContactForm = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...data })
     })
-      .then(() => {alert("Form submitted successfully!"); reset()})
+      .then(() => {Swal.fire('Message sent!', 'I\'ll get back to you ASAP', 'success'); reset()})
       .catch(error => alert(error));
   }
   return (
