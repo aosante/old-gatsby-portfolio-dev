@@ -8,14 +8,13 @@ const ContactForm = () => {
   const { handleSubmit, errors, register } = useForm({ mode: 'onTouched' });
 
   const onSubmit = data => {
-    console.log(data);
-    // fetch("/", {
-    //   method: "POST",
-    //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    //   body: encode({ "form-name": "contact", data })
-    // })
-    //   .then(() => alert("Success!"))
-    //   .catch(error => alert(error));
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", data })
+    })
+      .then(() => alert("Form submitted successfully!"))
+      .catch(error => alert(error));
   }
   return (
     <form
