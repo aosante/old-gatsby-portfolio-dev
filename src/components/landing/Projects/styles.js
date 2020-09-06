@@ -6,6 +6,10 @@ export const OuterContainer = styled.div`
   background-size: contain;
   background-position: left top;
   background-repeat: no-repeat;
+  
+  @media (min-width: 1680px) {
+    padding-bottom: 14rem;
+  }
 `
 
 export const Wrapper = styled.div`
@@ -14,6 +18,7 @@ export const Wrapper = styled.div`
     margin-bottom: 2rem;
     font-size: 2.5rem;
     color: #ccd6f6;
+
     @media (max-width: 680px) {
       text-align: center;
     }

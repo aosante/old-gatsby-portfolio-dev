@@ -9,6 +9,10 @@ export const AboutWrapper = styled.div`
   @media (max-width: 960px) {
     flex-direction: column;
   }
+
+  @media (min-width: 1680px) {
+    padding-bottom: 14rem;
+  }
 `;
 
 export const Details = styled.div`
@@ -24,6 +28,7 @@ export const Details = styled.div`
     margin-bottom: 2rem;
     font-size: 2.5rem;
     color: #ccd6f6;
+
     @media (max-width: 680px) {
       text-align: center;
     }
@@ -39,6 +44,7 @@ export const Details = styled.div`
       margin-bottom: 2.5rem;
     }
   }
+  
   a {
     color: #ff0a78;
   }

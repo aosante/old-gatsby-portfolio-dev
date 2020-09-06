@@ -2,13 +2,18 @@ import styled from 'styled-components';
 import overlayIllustration from 'assets/illustrations/overlay.svg';
 
 export const Wrapper = styled.div`
-  padding-bottom: 4rem;
+  padding-bottom: 7rem;
   background-image: url(${overlayIllustration});
   background-size: contain;
   background-position: right top;
   background-repeat: no-repeat;
   @media (max-width: 960px) {
     background: none;
+    padding-bottom: 4rem;
+  }
+  @media (min-width: 1680px) {
+    padding-bottom: 14rem;
+    padding-top: 2em;
   }
 `;
 
@@ -70,6 +75,7 @@ export const Details = styled.div`
 
   span {
     color: #ccd6f6;
+    
     @media (max-width: 960px) {
       text-shadow:
 		-0.1px -0.1px 0 #0a1928,
