@@ -7,14 +7,19 @@ import { Error, Center, InputField } from './styles';
 const ContactForm = () => {
   const { handleSubmit, errors, register, reset } = useForm({ mode: 'onTouched' });
 
+  const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
+
   const onSubmit = data => {
-    // TODO: Fix. Data not getting to netlify
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: data
+      body: encode({ "form-name": "contact", ...data })
     })
-      .then(() => {alert("Form submitted successfully!"); reset();})
+      .then(() => {alert("Form submitted successfully!"); reset()})
       .catch(error => alert(error));
   }
   return (
