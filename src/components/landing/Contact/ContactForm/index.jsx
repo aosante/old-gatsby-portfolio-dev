@@ -7,6 +7,12 @@ import { Error, Center, InputField } from './styles';
 const ContactForm = () => {
   const { handleSubmit, errors, register } = useForm({ mode: 'onTouched' });
 
+  const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
+
   const onSubmit = data => {
     fetch("/", {
       method: "POST",
