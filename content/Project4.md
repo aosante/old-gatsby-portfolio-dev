@@ -4,4 +4,5 @@ description: "You're looking at it! This site is built with Gatsby, queries its 
 technologies: 'Gatsby,GraphQL,React Spring'
 sourcelink: 'https://github.com/aosante/gatsby-portfolio-dev'
 sitelink: '#'
+shouldDisable: true
 ---

@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import { Container, Card } from 'components/common'
 import folderIcon from '../../../../static/icons/folder.svg';
 import githubIcon from '../../../../static/icons/github.svg';
+import crossedeyeIcon from '../../../../static/icons/crossedeye.svg'
 import eyeIcon from '../../../../static/icons/eye.svg'
 import { Wrapper, OuterContainer, Grid, Item, Content, Header, Stack } from './styles'
 
@@ -21,6 +22,7 @@ export const Projects = () => {
           sitelink
           description
           title
+          shouldDisable
         }
       }
     }
@@ -46,9 +48,14 @@ export const Projects = () => {
                   </div>
                   <div className="links">
                     <a href={frontmatter.sourcelink} target="_blank"><img src={githubIcon} alt="Github Icon"/></a>
-                    <a href={frontmatter.sitelink} target="_blank" >
+                    {frontmatter.shouldDisable ? 
+                    (<div href={frontmatter.sitelink} className="disabled" target="_blank" >
+                      <img src={crossedeyeIcon} alt="Eye Icon"/>
+                    </div>) 
+                      : 
+                    (<a href={frontmatter.sitelink} disabled={true} target="_blank" >
                       <img src={eyeIcon} alt="Eye Icon"/>
-                      </a>
+                    </a>)}
                   </div>
                 </Header>
               <Content>

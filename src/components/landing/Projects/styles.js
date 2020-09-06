@@ -71,7 +71,10 @@ export const Header = styled.div`
    flex: 1;
    display: flex;
    align-items: center;
-   a {
+   .disabled:hover {
+     cursor: not-allowed;
+   }
+   a, div {
      flex: 1;
      display: flex;
      align-items: center;

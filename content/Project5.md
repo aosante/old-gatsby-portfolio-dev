@@ -4,4 +4,5 @@ description: '(Coming soon) small React app that shows the surf forecast for a c
 technologies: 'Gatsby,GraphQL,Tailwind CSS'
 sourcelink: 'https://github.com/aosante/cr-surf-forecast'
 sitelink: '#'
+shouldDisable: true
 ---
