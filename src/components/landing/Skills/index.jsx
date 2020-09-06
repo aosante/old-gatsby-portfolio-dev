@@ -75,9 +75,9 @@ export const Skills = () => {
                 <h1>Skills & Experience</h1>
                 <InView tag="div" onChange={onViewChange}>
                   <animated.div style={textProps}>
-                    <p>Mainly, I am a web application developer, using JavaScript as my main language.</p>
+                    <p>I'm a software developer, focusing on web applications, using JavaScript as my main language.</p>
                     <p>On the front end side of things, I have experience utilizing modern frameworks such as Vue and React, with a variety of architectures, styling and state management tools, and data fetching techniques.</p>
-                    <p>As to server side code, my main experience lies in writing Node JS (in both JavaScript and TypeScript). I also have hands-on experience with testing (Jest, Enzyme, Mocha), and databases (SQL and Mongo).</p>
+                    <p>As to server side code, my main experience lies in writing Node JS (in both JavaScript and TypeScript). I also have hands-on experience with testing (Jest, Enzyme, Mocha), and database querying and design (SQL and Mongo).</p>
                   </animated.div>
                 </InView>
             </Content>
