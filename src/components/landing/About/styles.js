@@ -6,6 +6,10 @@ export const AboutWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
 
+  @media (max-width: 680px) {
+    text-align: center;
+  }
+
   @media (max-width: 960px) {
     flex-direction: column;
   }
@@ -47,6 +51,7 @@ export const Details = styled.div`
     font-weight: normal;
     line-height: 1.3;
     color: #8892b0;
+    text-align: left;
     &:last-of-type {
       margin-bottom: 2.5rem;
     }

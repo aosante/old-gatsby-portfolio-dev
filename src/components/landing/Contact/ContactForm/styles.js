@@ -7,6 +7,10 @@ export const Error = styled.span`
 export const Center = styled.div`
   text-align: left;
 
+  @media(max-width: 680px) {
+    text-align: center;
+  }
+
   h4 {
     font-weight: normal;
   }
