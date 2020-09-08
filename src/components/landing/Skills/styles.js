@@ -30,6 +30,7 @@ export const Content = styled.div`
 
         @media (max-width: 680px) {
          text-align: center;
+         margin: 0.5em 0 1em;
         }
     }
     p {

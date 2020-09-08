@@ -7,6 +7,10 @@ export const Wrapper = styled.div`
   background-size: contain;
   background-position: right top;
   background-repeat: no-repeat;
+
+  @media (max-width: 680px) {
+    padding-bottom: 0;
+  }
   @media (max-width: 960px) {
     background: none;
     padding-bottom: 4rem;
@@ -22,6 +26,10 @@ export const IntroWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 680px) {
+    padding: 0;
+  }
 
   @media (max-width: 960px) {
     flex-direction: column;

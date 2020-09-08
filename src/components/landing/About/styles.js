@@ -31,6 +31,13 @@ export const Details = styled.div`
 
     @media (max-width: 680px) {
       text-align: center;
+      margin: 0.5em 0 1em;
+    }
+  }
+
+  .text {
+    @media (max-width: 960px) {
+      margin-bottom: 4em;
     }
   }
 
