@@ -32,8 +32,8 @@ export const Intro = () => {
 		<IntroWrapper as={Container}>
 			<Details>
 				<p>Hi there! I'm</p>
-				<animated.h1 style={props}>Andrés.</animated.h1>
-				<animated.h4  style={headingProps}>A developer from <span>Costa Rica.</span></animated.h4>
+				<animated.h1 style={props}>Andrés<span>.</span></animated.h1>
+				<animated.h4  style={headingProps}>A developer from <span>Costa Rica<span className="hide">.</span></span></animated.h4>
 				<div>
 				<AnimatedButton style={buttonProps} as={AnchorLink} href="#about">
 					Learn More

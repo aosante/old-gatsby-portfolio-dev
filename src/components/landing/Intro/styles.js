@@ -58,6 +58,12 @@ export const Details = styled.div`
     letter-spacing: 1.75px;
     font-family: 'SF Mono', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
+    @media(max-width: 680px) {
+      span {
+          display: none
+        }
+    }
+    
     @media (max-width: 960px) {
       font-size: 50pt;
       margin-top: 2rem;
@@ -78,6 +84,9 @@ export const Details = styled.div`
 
     @media (max-width: 680px) {
       font-size: 28pt;
+      span.hide {
+        display: none;
+      }
     }
   }
 
