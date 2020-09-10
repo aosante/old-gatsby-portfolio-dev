@@ -2,10 +2,10 @@ import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
 import { Container, Card, Title } from 'components/common'
-import folderIcon from '../../../../static/icons/folder.svg';
-import githubIcon from '../../../../static/icons/github.svg';
-import crossedeyeIcon from '../../../../static/icons/crossedeye.svg'
-import eyeIcon from '../../../../static/icons/eye.svg'
+import folderIcon from 'assets/icons/folder.svg'
+import githubIcon from 'assets/icons/github.svg'
+import crossedeyeIcon from 'assets/icons/crossedeye.svg'
+import eyeIcon from 'assets/icons/eye.svg'
 import { Wrapper, OuterContainer, Grid, Item, Content, Header, Stack } from './styles'
 
 
