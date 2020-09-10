@@ -7,7 +7,6 @@ module.exports = {
   legalName: 'Andrés Osante',
   defaultDescription: 'I’m Andrés, a developer from Costa Rica.',
   socialLinks: {
-    twitter: '',
     github: 'https://github.com/aosante',
     linkedin: 'https://www.linkedin.com/in/andr%C3%A9s-osante-alfaro-845701ba/',
     instagram: 'https://www.instagram.com/aosanaa/',
@@ -19,7 +18,6 @@ module.exports = {
   backgroundColor: '#ff0a78',
   social: {
     facebook: 'appId',
-    twitter: '',
   },
   address: {
     city: 'San José',
