@@ -9,6 +9,7 @@ import {InView} from 'react-intersection-observer'
 import {useSpring, animated} from 'react-spring'
 
 import {Wrapper, Content, SkillGrid} from './styles'
+import {Title} from 'components/common'
 import useMedia from './hooks/useMedia'
 import skillImages from './images';
 
@@ -72,7 +73,7 @@ export const Skills = () => {
     return (
         <Wrapper>
             <Content>
-                <h1>Skills & Experience</h1>
+                <Title>Skills & Experience</Title>
                 <InView tag="div" onChange={onViewChange}>
                   <animated.div style={textProps}>
                     <p>I'm a software developer, focusing on web applications, using JavaScript as my main language.</p>

@@ -28,17 +28,6 @@ export const Details = styled.div`
     width: 100%;
   }
 
-  h1 {
-    margin-bottom: 2rem;
-    font-size: 2.5rem;
-    color: #ccd6f6;
-
-    @media (max-width: 680px) {
-      text-align: center;
-      margin: 0.5em 0 1em;
-    }
-  }
-
   .text {
     @media (max-width: 960px) {
       margin-bottom: 4em;

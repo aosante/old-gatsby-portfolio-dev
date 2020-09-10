@@ -22,17 +22,7 @@ export const Wrapper  = styled.div`
 export const Content = styled.div`
     flex: 1;
     padding: 2rem 3rem;
-    h1 {
-        margin-bottom: 2rem;
-        font-size: 2.5rem;
-        color: #ccd6f6;
-        text-align: left;
-
-        @media (max-width: 680px) {
-         text-align: center;
-         margin: 0.5em 0 1em;
-        }
-    }
+    
     p {
     margin-bottom: 1.5rem;
     font-size: 14.3pt;

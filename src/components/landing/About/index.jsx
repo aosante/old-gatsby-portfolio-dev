@@ -3,7 +3,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 import {InView} from 'react-intersection-observer'
 import {useSpring, animated} from 'react-spring'
 
-import { Container, Button } from 'components/common'
+import { Container, Button, Title } from 'components/common'
 import surfer from 'assets/illustrations/surfer.svg'
 import {  AboutWrapper, Details, Thumbnail } from './styles'
 
@@ -24,7 +24,7 @@ export const About = () =>  {
       </Thumbnail>
       <Details>
         <InView tag="div">
-          <h1>About Me</h1>
+          <Title>About Me</Title>
         </InView>
         <InView tag="div" className="text" onChange={onViewChange}>
           <animated.div style={aboutProps}>

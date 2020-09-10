@@ -1,7 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
-import { Container, Card } from 'components/common'
+import { Container, Card, Title } from 'components/common'
 import folderIcon from '../../../../static/icons/folder.svg';
 import githubIcon from '../../../../static/icons/github.svg';
 import crossedeyeIcon from '../../../../static/icons/crossedeye.svg'
@@ -35,7 +35,7 @@ export const Projects = () => {
   return (
     <OuterContainer>
     <Wrapper as={Container}  id="projects">
-      <h1>Projects</h1>
+      <Title>Projects</Title>
       <Grid>
         {edges.map(({ node: {frontmatter} }, i) => (
           <Item
@@ -46,6 +46,7 @@ export const Projects = () => {
                   <div className="icon">
                     <img src={folderIcon} alt="Folder Icon"/>
                   </div>
+                  {/* TODO: make this div a styled-component called Links */}
                   <div className="links">
                     <a href={frontmatter.sourcelink} target="_blank"><img src={githubIcon} alt="Github Icon"/></a>
                     {frontmatter.shouldDisable ? 
