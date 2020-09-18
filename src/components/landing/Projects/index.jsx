@@ -6,7 +6,7 @@ import folderIcon from 'assets/icons/folder.svg'
 import githubIcon from 'assets/icons/github.svg'
 import crossedeyeIcon from 'assets/icons/crossedeye.svg'
 import eyeIcon from 'assets/icons/eye.svg'
-import { Wrapper, OuterContainer, Grid, Item, Content, Header, Stack } from './styles'
+import { Wrapper, OuterContainer, Grid, Item, Content, Header, Stack, Links } from './styles'
 
 
 export const Projects = () => {
@@ -46,8 +46,7 @@ export const Projects = () => {
                   <div className="icon">
                     <img src={folderIcon} alt="Folder Icon"/>
                   </div>
-                  {/* TODO: make this div a styled-component called Links */}
-                  <div className="links">
+                  <Links>
                     <a href={frontmatter.sourcelink} target="_blank"><img src={githubIcon} alt="Github Icon"/></a>
                     {frontmatter.shouldDisable ? 
                     (<div href={frontmatter.sitelink} className="disabled" target="_blank" >
@@ -57,7 +56,7 @@ export const Projects = () => {
                     (<a href={frontmatter.sitelink} disabled={true} target="_blank" >
                       <img src={eyeIcon} alt="Eye Icon"/>
                     </a>)}
-                  </div>
+                  </Links>
                 </Header>
               <Content>
                 <h4>{frontmatter.title}</h4>

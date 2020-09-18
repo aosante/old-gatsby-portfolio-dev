@@ -62,9 +62,10 @@ export const Header = styled.div`
      margin: 0;
    }
  }
+`
 
- div.links {
-   flex: 1;
+export const Links =styled.div`
+flex: 1;
    display: flex;
    align-items: center;
    .disabled:hover {
@@ -77,6 +78,7 @@ export const Header = styled.div`
      justify-content: center;
      pointer-events: auto;
      margin: 0;
+     z-index: 1;
      img {
       width: 25px;
       height: 25px;
@@ -87,7 +89,6 @@ export const Header = styled.div`
       }
      }
    }
- }
 `
 
 export const Content = styled.div`
