@@ -3,11 +3,13 @@ import styled from 'styled-components';
 export const Input = styled.input`
   width: 100%;
   box-sizing: border-box;
-  border: 2px solid #6c63ff;
+  border: 0.4px solid #172a45;
   padding: 0.8rem 1rem;
-  border-radius: 7px;
+  border-radius: 3px;
   margin-bottom: 0.5rem;
   transition: 0.3s;
+  background-color: #172a45;
+  color: #ccd6f6;
 
   ${({ error }) =>
     error &&
@@ -16,7 +18,7 @@ export const Input = styled.input`
 	`}
 
   &::placeholder {
-    color: #a7a7a7;
+    color: #8892b0;
   }
 `;
 
@@ -24,11 +26,13 @@ export const Input = styled.input`
 export const TextArea = styled.textarea`
   width: 100%;
   box-sizing: border-box;
-  border: 2px solid #6c63ff;
+  border: 0.4px solid #172a45;
   padding: 0.8rem 1rem;
-  border-radius: 7px;
+  border-radius: 3px;
   margin-bottom: 0.5rem;
   transition: 0.3s;
+  background-color: #172a45;
+  color: #ccd6f6;
 
   ${({ error }) =>
     error &&
@@ -37,6 +41,6 @@ export const TextArea = styled.textarea`
 	`}
 
   &::placeholder {
-    color: #a7a7a7;
+    color: #8892b0;
   }
 `;
