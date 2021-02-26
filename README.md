@@ -14,7 +14,8 @@
 - Continuous deployment with [Netlify](https://netlify.com)
 - A contact form protected by Google Recaptcha (todo)
 - Functional components with React Hooks!
-- Markdown data fetching with GraphQL
+- Markdown data fetching with GraphQL\
+- Animations with React Spring
 
 ## Structure
 
@@ -63,5 +64,5 @@ yarn reset
 - Gatsby
 - React & GraphQL
 - React Spring
-- React Hooks Form
+- React Hook Form
 - And these useful of JavaScript libraries & Gatsby plugins [package.json](package.json)
