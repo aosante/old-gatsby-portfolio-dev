@@ -9,13 +9,12 @@
 - PWA (desktop & mobile)
 - Easy to customize
 - Nice project structure
-- Amazing illustrations by [Undraw.co](https://undraw.co)
+- Illustrations by [Undraw.co](https://undraw.co)
 - Tablet & mobile friendly
 - Continuous deployment with [Netlify](https://netlify.com)
-- A contact form protected by Google Recaptcha
-- Can be deployed with one click
-- Functional components with ~~Recompose~~ React Hooks! ~~ready to migrate to React hooks!~~
-- Fetches your Github pinned projects with most stars (You could customize this if you wish)
+- A contact form protected by Google Recaptcha (todo)
+- Functional components with React Hooks!
+- Markdown data fetching with GraphQL
 
 ## Structure
 
