@@ -62,5 +62,6 @@ yarn reset
 - Adobe XD
 - Gatsby
 - React & GraphQL
-- VSCode
+- React Spring
+- React Hooks Form
 - And these useful of JavaScript libraries & Gatsby plugins [package.json](package.json)
