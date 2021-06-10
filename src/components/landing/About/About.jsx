@@ -32,7 +32,7 @@ export const About = () =>  {
             I'm a business graduate from <a href="https://www.ucr.ac.cr/" target="_blank">Universidad de Costa Rica</a>, with a technical degree in Software Engineering from <a href="https://www.ucenfotec.ac.cr/" target="_blank">Universidad Cenfotec</a>.
             </p>
             <p>I discovered software development 4 years ago, and I've been building apps as a hobby and professionally ever since.</p>
-            <p>Surfing, guitar and programming are the three things I enjoy the most, and I look forward to excercising my passion for the latter by working with you!</p>
+            <p>Surfing, guitar and programming are the three things I enjoy the most, and one of my biggest goals is to excercise my passion for the latter by being part of enriching and impactful projects.</p>
           </animated.div>
         </InView>
         <Button as={AnchorLink} href="#contact">
