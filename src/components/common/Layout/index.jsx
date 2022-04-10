@@ -5,9 +5,9 @@ import './fonts.css'
 import './variables.css'
 
 export const Layout = ({ children }) => (
-	<>
-		<Global />
-		{children}
-		<Footer />
-	</>
+  <>
+    <Global />
+    {children}
+    <Footer />
+  </>
 )
