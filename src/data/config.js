@@ -31,54 +31,49 @@ module.exports = {
   },
   foundingDate: '2020',
   recaptcha_key: '6LfuIbkZAAAAAOjlJsaTeDsW2EFB3UfyOJcFbTpm',
-  skillData: [ 
+  skillData: [
     {
-    css: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)',
-    height: 250,
-    name: 'htmlIcon',
-  },
-  {
-    
-    css: 'linear-gradient(135deg, #c3cfe2 0%, #c3cfe2 100%)',
-    height: 250,
-    name: 'cssIcon',
-  },
-  {
-    
-    css: 'linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%)',
-    height: 250,
-    name: 'jsIcon'
-  },
-  {
-    
-    css: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
-    height: 250,
-    name: 'graphqlIcon'
-  },
-  {
+      css: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)',
+      height: 250,
+      name: 'htmlIcon',
+    },
+    {
+      css: 'linear-gradient(135deg, #c3cfe2 0%, #c3cfe2 100%)',
+      height: 250,
+      name: 'cssIcon',
+    },
+    {
+      css: 'linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%)',
+      height: 250,
+      name: 'jsIcon',
+    },
+    {
+      css: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+      height: 250,
+      name: 'graphqlIcon',
+    },
+    {
       css: 'linear-gradient(135deg, #a82dea 0%, #fed6e3 100%)',
       height: 250,
-      name: 'reactIcon'
+      name: 'reactIcon',
     },
     {
-      
       css: 'linear-gradient(135deg, #c3cfe2 0%, #c1cfe2 100%)',
       height: 250,
-      name: 'sassIcon'
+      name: 'sassIcon',
     },
     {
-      
       css: 'linear-gradient(135deg, #e3c3fc 0%, #8ec5fc 100%)',
       height: 250,
       name: 'sqlserverIcon',
-      isDark: true
+      isDark: true,
     },
     {
       css: 'linear-gradient(135deg, #f091fb 0%, #f5576c 100%)',
       height: 250,
       name: 'mongodbIcon',
-      isDark: true
-    }, 
+      isDark: true,
+    },
     {
       css: 'linear-gradient(135deg, #f091fb 0%, #f5572c 100%)',
       height: 250,
@@ -100,5 +95,5 @@ module.exports = {
       height: 250,
       name: 'reduxIcon',
     },
-  ]
-};
+  ],
+}
