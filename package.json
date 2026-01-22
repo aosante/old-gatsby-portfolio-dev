@@ -23,7 +23,7 @@
     "gatsby-source-filesystem": "^2.3.33",
     "gatsby-transformer-remark": "^6.12.3",
     "gatsby-transformer-sharp": "^2.5.17",
-    "lodash": "^4.17.21",
+    "lodash": "^4.17.23",
     "prop-types": "^15.6.2",
     "react": "^16.11.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
